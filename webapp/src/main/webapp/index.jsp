@@ -1,1 +1,1 @@
-<h1 style="color:red">Welcome to my Custom Page</h1>
+<h1 style="color:blue">Welcome to my Custom Page</h1>
