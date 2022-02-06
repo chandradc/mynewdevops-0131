@@ -3,6 +3,8 @@
 - name: Play book to create docker container
   hosts: docker-host
   tasks:
+   - name: Delete existing Docker contatiner
+     command: docker rm -f mytomcontainer
    - name: Create Docker contatiner
      command: docker run -d -p 8888:8080 --name mytomcontainer chandradc/mytomcat:1
    
