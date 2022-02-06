@@ -1,7 +1,7 @@
 ---
 
 - name: Play book to create docker container
-  hosts: ansible-server
+  hosts: docker-host
   tasks:
    - name: Create Docker contatiner
      command: docker run -d -p 8888:8080 --name mytomcontainer chandradc/mytomcat:1 .
