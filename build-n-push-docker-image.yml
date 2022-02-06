@@ -1,0 +1,9 @@
+---
+
+- name: Play book to build the docker image and push it to the dockerhub
+  hosts: ansible-server
+  tasks:
+   - name: Build the Docker image
+     command: docker build -t chandradc/06mytomcat .
+   - name: Push the image to docker hub
+     command: docker push chandradc/06-1mytomcat
