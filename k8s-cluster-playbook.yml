@@ -1,0 +1,9 @@
+---
+
+- name: Playbook to deploy the docker images to the K8s cluster
+  hosts: k8s-cluster
+  tasks:
+    - name: Run the deployment manifest file
+      command: kubectl apply -f tomcat-deploy.yml
+    - name: Run and create the service manifest file
+      command: kubectl apply -f tomcat-service.yml
