@@ -1,0 +1,9 @@
+---
+
+- name: Playbook to delete the previous deployment and service
+  hosts: k8s-cluster
+  tasks:
+    - name: Deleting the deployment
+      command: kubectl delete deployment tomcat-deployment
+    - name: Deleting the Service
+      command: kubectl delete deployment tomcat-service
