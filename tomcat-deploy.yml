@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: comcat
-          image: chandradc/mytomcat:49
+          image: chandradc/mytomcat:54
           ports:
             - containerPort: 8080
