@@ -4,6 +4,6 @@
   hosts: ansible-server
   tasks:
    - name: Build the Docker image
-     command: docker build -t chandradc/mytomcat: {{ BUILD_NUMBER }} .
+     command: docker build -t chandradc/mytomcat:{{ BUILD_NUMBER }} .
    - name: Push the image to docker hub
-     command: docker push chandradc/mytomcat:$BUILD_NUMBER
+     command: docker push chandradc/mytomcat:{{ BUILD_NUMBER }}
