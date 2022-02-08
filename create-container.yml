@@ -7,4 +7,5 @@
      command: docker rm -f mytomcontainer
    - name: Create Docker contatiner
      command: docker run -d -p 8888:8080 --name mytomcontainer chandradc/mytomcat:{{ BUILD_NUMBER }}
+     
    
